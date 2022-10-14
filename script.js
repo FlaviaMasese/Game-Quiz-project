@@ -3,8 +3,15 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+const highScoresList = document.getElementById("score-btn");
 
 let shuffledQuestions, currentQuestionIndex
+
+score-btn.innerHTML ; highScores
+  .map(score => {
+    return `<li class="high-score">${score.name} - ${score.score}</li>`;
+  })
+  .join("");
 
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
@@ -75,6 +82,11 @@ function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
 }
+
+score:0,
+        function(){
+            scoreCard.innerHTML=this.questions.length + "/" + this.score;
+        }
 
 const questions = [
   {
