@@ -7,12 +7,6 @@ const highScoresList = document.getElementById("score-btn");
 
 let shuffledQuestions, currentQuestionIndex
 
-score-btn.innerHTML ; highScores
-  .map(score => {
-    return `<li class="high-score">${score.name} - ${score.score}</li>`;
-  })
-  .join("");
-
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
